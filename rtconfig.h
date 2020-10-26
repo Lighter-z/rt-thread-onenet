@@ -156,7 +156,7 @@
 
 #define SAL_USING_LWIP
 /* end of protocol stack implement */
-#define SAL_SOCKETS_NUM 16
+#define SAL_USING_POSIX
 /* end of Socket abstraction layer */
 
 /* Network interface device */
@@ -234,6 +234,18 @@
 
 /* IoT - internet of things */
 
+#define PKG_USING_PAHOMQTT
+#define PAHOMQTT_PIPE_MODE
+#define RT_PKG_MQTT_THREAD_STACK_SIZE 4096
+#define PKG_PAHOMQTT_SUBSCRIBE_HANDLERS 1
+#define MQTT_DEBUG
+#define PKG_USING_PAHOMQTT_V110
+#define PKG_USING_WEBCLIENT
+#define WEBCLIENT_NOT_USE_TLS
+#define PKG_USING_WEBCLIENT_V212
+#define PKG_WEBCLIENT_VER_NUM 0x20102
+#define PKG_USING_CJSON
+#define PKG_USING_CJSON_V102
 
 /* Wi-Fi */
 
@@ -248,6 +260,15 @@
 
 /* IoT Cloud */
 
+#define PKG_USING_ONENET
+#define PKG_USING_ONENET_SAMPLE
+#define ONENET_USING_MQTT
+#define ONENET_INFO_DEVID "552655029"
+#define ONENET_INFO_AUTH "111"
+#define ONENET_INFO_APIKEY "VMVTTaX4Tsm8t1Kvzv==l=uOoY8="
+#define ONENET_INFO_PROID "281293"
+#define ONENET_MASTER_APIKEY "OY3T6ydU2xoXgkTd=OPqZzNYiE4="
+#define PKG_USING_ONENET_LATEST_VERSION
 /* end of IoT Cloud */
 /* end of IoT - internet of things */
 

@@ -1,5 +1,25 @@
 [
  {
+  "path": "/packages/iot/pahomqtt", 
+  "ver": "v1.1.0", 
+  "name": "PAHOMQTT"
+ }, 
+ {
+  "path": "/packages/iot/webclient", 
+  "ver": "v2.1.2", 
+  "name": "WEBCLIENT"
+ }, 
+ {
+  "path": "/packages/iot/cJSON", 
+  "ver": "v1.0.2", 
+  "name": "CJSON"
+ }, 
+ {
+  "path": "/packages/iot/iot_cloud/onenet", 
+  "ver": "latest", 
+  "name": "ONENET"
+ }, 
+ {
   "path": "/packages/tools/EasyFlash", 
   "ver": "v4.1.0", 
   "name": "EASYFLASH"
