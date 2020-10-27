@@ -109,6 +109,8 @@
 #define RT_SFUD_USING_SFDP
 #define RT_SFUD_USING_FLASH_INFO_TABLE
 #define RT_SFUD_SPI_MAX_HZ 50000000
+#define RT_USING_SENSOR
+#define RT_USING_SENSOR_CMD
 #define RT_USING_WIFI
 #define RT_WLAN_DEVICE_STA_NAME "wlan0"
 #define RT_WLAN_DEVICE_AP_NAME "wlan1"
@@ -311,6 +313,10 @@
 
 /* peripheral libraries and drivers */
 
+#define PKG_USING_SENSORS_DRIVERS
+#define PKG_USING_DHT11
+#define PKG_USING_DHT11_SAMPLE
+#define PKG_USING_DHT11_LATEST_VERSION
 /* end of peripheral libraries and drivers */
 
 /* miscellaneous packages */

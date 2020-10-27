@@ -30,6 +30,8 @@ typedef struct {
 
 }ArtOneNet;
 
+extern ArtOneNet art_onenet;
+
 void ArtOneNetUploaData(void);
 
 #endif /* APPLICATIONS_ARTONENET_H_ */

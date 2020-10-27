@@ -28,5 +28,10 @@
   "path": "/packages/system/fal", 
   "ver": "v0.5.0", 
   "name": "FAL"
+ }, 
+ {
+  "path": "/packages/peripherals/sensors/dht11", 
+  "ver": "latest", 
+  "name": "DHT11"
  }
 ]
