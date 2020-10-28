@@ -14,6 +14,7 @@
 #include <onenet.h>
 
 #include "ArtDht11.h"
+#include "ArtBh1750.h"
 
 ArtOneNet art_onenet;
 
@@ -51,8 +52,19 @@ static void art_onenet_upload_entry(void *parameter) {
               LOG_E("upload has an error, stop uploading");
               break;
             } else {
+                LOG_D("buffer : {\"humi\":%d}", art_dht11.humi_);
+            }
+
+            rt_thread_delay(rt_tick_from_millisecond(300));
+
+            if (onenet_mqtt_upload_digit("light", art_bh1750.data_) < 0) {
+              LOG_E("upload has an error, stop uploading");
+              break;
+            } else {
                 LOG_D("buffer : {\"light\":%d}", art_dht11.humi_);
             }
+
+
 
         }
     }

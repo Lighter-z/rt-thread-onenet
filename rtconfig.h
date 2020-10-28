@@ -97,6 +97,8 @@
 #define RT_SYSTEM_WORKQUEUE_PRIORITY 23
 #define RT_USING_SERIAL
 #define RT_SERIAL_RB_BUFSZ 64
+#define RT_USING_I2C
+#define RT_USING_I2C_BITOPS
 #define RT_USING_PIN
 #define RT_USING_SDIO
 #define RT_SDIO_STACK_SIZE 512
@@ -350,6 +352,17 @@
 #define BSP_USING_UART4
 #define BSP_USING_SPI
 #define BSP_USING_SPI1
+#define BSP_USING_I2C1
+
+/* Notice: PB6 --> 22; PB7 --> 23 */
+//
+//    __STM32_PIN(123, H, 11),   scl
+//    __STM32_PIN(124, H, 12),
+//    __STM32_PIN(125, H, 13),
+//    __STM32_PIN(126, H, 14),
+//    __STM32_PIN(127, H, 15),
+#define BSP_I2C1_SCL_PIN 127
+#define BSP_I2C1_SDA_PIN 125
 #define BSP_USING_SDIO
 #define BSP_USING_SDIO2
 /* end of On-chip Peripheral */
