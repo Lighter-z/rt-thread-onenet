@@ -35,7 +35,6 @@ static void art_onenet_upload_entry(void *parameter) {
     rt_thread_delay(rt_tick_from_millisecond(500));
 
     while(1) {
-//        value = rand() % 100;
         if(rt_event_recv(art_onenet.recvdata_event_, (DS18B20_GET_DATA_EVENT | BH1750_GET_DATA_EVENT), RT_EVENT_FLAG_OR | RT_EVENT_FLAG_CLEAR, RT_WAITING_FOREVER, &set) == RT_EOK) {
             rt_thread_delay(rt_tick_from_millisecond(300));
 
