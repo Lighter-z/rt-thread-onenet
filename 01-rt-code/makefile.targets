@@ -4,4 +4,4 @@ clean2:
 	-@echo ' '
 
 
-*.elf: $(wildcard C:/Users/OMEN/Desktop/rt-demo/art_pi_wifi/board/linker_scripts/STM32H750XBHx/link.lds)
+*.elf: $(wildcard C:/Users/OMEN/Desktop/rt-thread-onenet/01-rt-code/board/linker_scripts/STM32H750XBHx/link.lds)
